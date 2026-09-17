@@ -52,7 +52,7 @@ $$
 $\frac{dV}{dt}$를 낮추기 위해 Pre-charge 회로를 이용해서 커패시터를 천천히 충전시킴.
 
 $$
-\tau = R \times C
+\tau = R \times C \quad\tau\,는\,시정수
 $$
 
 $$1-e^{-\tau}$$
