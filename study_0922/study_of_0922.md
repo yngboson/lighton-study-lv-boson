@@ -92,13 +92,13 @@ LEF-26 SDC에서는 전압을 적절하게 걸어 AND 게이트처럼 사용한 
 
 ### IMD가 정상인 경우(IMD 신호가 들어오는 경우)
 
-* ![IMD 정상](imd_normal.mp4)
+* [IMD 정상](imd_normal.mp4)
 
 IMD 신호가 정상이면, 게이트에 전압이 걸리고, 리셋 신호를 통과시킬 수 있음. 이때 리셋 버튼을 누르면, Drain에서 Source를 거쳐 코일에 전압이 걸리고, 릴레이가 닫힘. 이때부터 5번 핀이 코일의 전압을 유지하기 때문에 리셋 신호가 더이상 들어오지 않아도 닫힌 상태를 유지.
 
 ### IMD가 비정상인 경우(IMD 신호가 들어오지 않는 경우)
 
-* ![IMD 비정상](imd_fail.mp4)
+* [IMD 비정상](imd_fail.mp4)
 
 IMD 신호가 비정상이면(LOW이면), 게이트에 전압이 안 걸리고, 리셋 신호를 통과시킬 수 없음. 이때 리셋 버튼을 눌러도, MOSFET에서 막히기 떄문에, 코일을 닫을 수 없음. IMD가 비정상 상태일 때 SDC가 닫히는 것을 막음.
 
@@ -122,7 +122,7 @@ SDC에서는 이 규정을 반영하여, Reset_opto 또는 BSPD+10s 신호 둘 �
 
 ![alt text](image-9.png)
 
-* ![Falstad 시뮬레이션](falstad_sdc_lowside.mp4)
+* [Falstad 시뮬레이션](falstad_sdc_lowside.mp4)
 
 Source 뒤쪽에 코일이 연결되어 있는 High-side 구조 회로를 Low-side 회로로 변형시킨 회로임. MOSFET에서 Gate가 열리기 위해서, Gate는 Source보다 높은 전압을 받아야 하는데, High-side 구조는 Source가 부하(릴레이 코일) 전에 위치하기 때문에 전압이 높음. 이때 Gate 전압이 충분하지 않다면, MOSFET이 켜지지 않을 가능성이 있음. Low-side에서 Source를 Ground에 작결하면, Soruce 전압이 0V이므로 문제가 발생할 가능성이 낮음.
 
