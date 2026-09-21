@@ -62,14 +62,18 @@
 ---
 
 * [정상작동](ready.mp4)
+* [falstad](falstad_normal.mp4)
 
 릴레이가 통과시켜준 전류를 자기 코일로 다시 받아서, 스스로 닫힌 상태를 유지. 이때 IMD 등의 신호가 끊기는 경우, 접점이 열려 외부 도움 없이 다시 접점을 복귀시킬 수 없음. (자기유지, Self-holding or Self-latching)
 
 * [이상이 생긴 경우](emergency.mp4)
+* [falstad](falstad_imd_out.mp4)
 
 IMD의 신호가 끊긴 경우, 코일을 작동하던 전류가 없어지므로 릴레이가 열린다. 열린 릴레이는 외부에서 다시 붙이지 않을 때까지 IMD 신호가 통과하지 못함.
 
 * [다시 켜는 경우](reset.mp4)
+* [falstad reset fail](falstad_reset_imd_fail.mp4)
+* [falstad reset normal](falstad_reset_recovered.mp4)
 
 IMD의 신호로는 다시 릴레이를 닫을 수 없으므로, 코일과 연결된 리셋 버튼으로 회로를 닫아줘야 함.
 
